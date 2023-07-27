@@ -33,7 +33,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <script src="index.js"></script>
+
 
     <style type="text/css">@font-face {
         font-family: 'Exo';
@@ -1104,11 +1105,7 @@
 
                                             <ul class="sub-menu">
                                                 <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-341">
-                                                    <a href="blogStandard.html">Blog Standard</a>
-                                                </li>
-
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-341">
-                                                    <a href="blogDetail.html">Blog Detail</a>
+                                                    <a href="blogStandard.html">Blogs</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -1274,7 +1271,6 @@
                                                                                     </div>
 
                                                                                     <form
-                                                                                        action="/themeforest/wp-bildhub/contact/#wpcf7-f6-p29-o1"
                                                                                         method="post"
                                                                                         class="wpcf7-form init"
                                                                                         aria-label="Contact form"
@@ -1336,6 +1332,7 @@
                                                                                                                     value=""
                                                                                                                     type="text"
                                                                                                                     name="your-name"
+                                                                                                                    id="name"
                                                                                                                 ></input>
                                                                                                             </span>
                                                                                                         </p>
@@ -1358,6 +1355,31 @@
                                                                                                                     value=""
                                                                                                                     type="text"
                                                                                                                     name="your-email"
+                                                                                                                    id="email"
+                                                                                                                ></input>
+                                                                                                            </span>
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                            <div class="row input-contact">
+                                                                                                <div class="col-12">
+                                                                                                    <div class="input-filled">
+                                                                                                        <p>
+                                                                                                            <span
+                                                                                                                class="wpcf7-form-control-wrap"
+                                                                                                                data-name="your-subject"
+                                                                                                            >
+                                                                                                                <input
+                                                                                                                    size="40"
+                                                                                                                    class="wpcf7-form-control wpcf7-text"
+                                                                                                                    aria-invalid="false"
+                                                                                                                    placeholder="Enter Subject"
+                                                                                                                    value=""
+                                                                                                                    type="text"
+                                                                                                                    name="your-subject"
+                                                                                                                    id="subject"
                                                                                                                 ></input>
                                                                                                             </span>
                                                                                                         </p>
@@ -1380,6 +1402,7 @@
                                                                                                                     aria-invalid="false"
                                                                                                                     placeholder="Your Message"
                                                                                                                     name="your-message"
+                                                                                                                    id="message"
                                                                                                                 ></textarea>
                                                                                                             </span>
                                                                                                         </p>
@@ -1392,8 +1415,10 @@
                                                                                                     <div class="input-filled input-filled-btn">
                                                                                                         <p>
                                                                                                             <button
+                                                                                                                id="submit"
                                                                                                                 type="submit"
                                                                                                                 class="wpcf7-submit"
+                                                                                                                onclick="saveForm()"
                                                                                                             >
                                                                                                                 <span>Send Message</span>
                                                                                                             </button>
@@ -1652,24 +1677,26 @@
                     <div class="widget cms-get-in-touch">
                         <div class="widget-content">
                             <div class="cms-contact-info-inner">
-                                <div class="cms-contact-info-item type-address">
+                                <div>
+                                    <i class="fa-solid fa-map-location-dot"  style="color: #ee451b;"></i>
                                     <a
                                         href="https://www.google.com/maps/place/ProMunim+of+India,+Pune/@18.5033242,73.9350995,15z/data=!4m10!1m2!2m1!1sibg+fincon!3m6!1s0x3bc2c20dfbd727bf:0x52ae5b3904e5a85f!8m2!3d18.5033237!4d73.9541545!15sCgppYmcgZmluY29ukgEVZmluYW5jaWFsX2luc3RpdHV0aW9u4AEA!16s%2Fg%2F1q6j4gv96?entry=ttu"
                                         target="_blank"
-                                    >
-                            Hadapsar, Pune</a>
+                                    >Hadapsar, Pune</a>
 
                                     <p class="widget-title-address">MAH, IN-411028</p>
                                 </div>
 
-                                <div class="cms-contact-info-item type-email">
+                                <div>
+                                    <i class="fa-solid fa-envelope-open-text"  style="color: #ee451b;"></i>
                                     <a href="mailto:contact@ibgreality.com">contact@ibgreality.com</a>
 
                                     <p class="widget-title-mail">Online Support</p>
                                 </div>
 
-                                <div class="cms-contact-info-item type-phone">
-                                    <a href="tel:91+7391012316">+91 7391012316</a>
+                                <div>
+                                    <i class="fa-solid fa-phone-flip"  style="color: #ee451b;"></i>
+                                    <a href="tel:91+73910123165">+91 73910123165</a>
 
                                     <p class="widget-title-phone">Mon-Fri 8am-5pm</p>
                                 </div>
