@@ -519,26 +519,41 @@
             margin-left: 850px;
             width:350px ;
         }
+        
         #companyName{
             height: 40px;
-            border:#8a8f96 solid 0.5px;
+            border:#c3c9d1 solid 0.5px;
+            border-radius:0.5rem ;
         }
         #website{
             height: 40px;
-            border:#8a8f96 solid 0.5px;
+            border:#c3c9d1 solid 0.5px;
+            margin-top: 20px;
+            border-radius:0.5rem ;
+
         }
         #purpose{
             height: 40px;
-            border:#8a8f96 solid 0.5px;
-        }#phone-number{
+            border:#c3c9d1 solid 0.5px;
+            margin-top: 20px;
+            border-radius:0.5rem ;
+
+        }#phoneNumber{
             height: 40px;
-            border:#8a8f96 solid 0.5px;
+            border:#c3c9d1 solid 0.5px;
+            margin-top: 20px;
+            border-radius:0.5rem ;
+      
         }#location{
             height: 40px;
-            border:#8a8f96 solid 0.5px;
+            border:#c3c9d1 solid 0.5px;
+            margin-top: 20px;
+            border-radius:0.5rem ;
+
         }#area-sqft{
             height: 40px;
-            border:#8a8f96 solid 0.5px;
+            border:#c3c9d1 solid 0.5px;
+
         }
         #form-icons{
             color: #8a8f96;
@@ -551,14 +566,14 @@
             border-radius:10px;
             background-color: #ffffff;
             color:#8a8f96;
-            border: #8a8f96 solid 1px;
+            border: #c3c9d1 solid 1px;
         }
         .tileLabel2{
             padding: 10px 15px 10px 15px;
             border-radius:10px;
             background-color: #ffffff;
             color:#8a8f96;
-            border: #8a8f96 solid 0.5px;
+            border: #c3c9d1 solid 0.5px;
         }
         .tileLabel1:hover{
             background-color: #ff5e15;
@@ -596,7 +611,7 @@
     </style>
 
     </head>
-<body class="home page-template-default page page-id-8 redux-page body-default-font heading-default-font header-sticky elementor-default elementor-kit-7 elementor-page elementor-page-8">
+<body >
 
     <header
             id="masthead"
@@ -1003,58 +1018,63 @@
                     </div>
                 </div>
             </div>
-        </header>
+    </header>
 
-        <div class="containerr">
-    <form class="contractform">
-        <div class="contractform-container">
-            <br>
-            <br>
-            <h6>Start Your Journey</h6>
-            <br>
-            <input id="companyName" class="form-control" type="text" placeholder="E.g. IBG Reality Pvt Ltd" aria-label="default input example">
-            <i id="form-icons" class="fa-solid fa-briefcase"></i>
-            <br>
-            <input id="website" class="form-control" type="text" placeholder="E.g. www.ibgreality.com" aria-label="default input example">
-            <i id="form-icons" class="fa-solid fa-globe"></i>
-            <br>
-            <Select name="select-purpose" id="purpose" class="form-control" style="margin-bottom: 20px; border: #8a8f96 solid 1px;
-            ">
-                <option value="Regular Business Office">Regular Business Office</option>
-                <option value="Executive Leadership Spaces">Executive Leadership Spaces</option>
-                <option value="Sales and Front-end Office">Sales and Front-end Office</option>
-                <option value="Bank Office /Call Centre /Data Centre">Bank Office /Call Centre /Data Centre</option>
-                <option value="Co-working Space">Co-working Space</option>
-                <option value="Others">Others</option>
-            </Select>
-            <input id="phone-number" class="form-control" type="text" placeholder="Phone number" aria-label="default input example">
-            <i id="form-icons" class="fa-solid fa-phone-flip"></i>
-            <br>
-            <input id="location" class="form-control" type="text" placeholder="Location" aria-label="default input example">
-            <i id="form-icons" class="fa-solid fa-location-dot"></i>
-            <br>
-            <div class="slider">Office Area 
-                <span style="margin-left: 170px; font-style: italic; color:#8a8f96;">Carpet (Sq.Ft)</span>
-                <input id="area-sqft" type="range" min="500" max="50000" value="3000" oninput="rangeValue.innerText = this.value">
-                <p id="rangeValue">3000</p>
-            </div>   
-
-            <div id="tiles" class="tiles">
-                    <input id="tile1" class="tile1" type="checkbox" hidden>
-                    <label for="tile1" class="tileLabel1">
-                        <i id="cicon1" class="fa-solid fa-building" style=" font-size:xx-large; margin-top: 10px;"></i>
-                        <br>New Building
-                    </label>
-                    <input id="tile2" class="tile2" type="checkbox" hidden>
-                    <label for="tile2" class="tileLabel2">
-                        <i id="cicon2" class="fa-solid fa-brush" style=" font-size:xx-large; margin-top: 10px;"></i>
-                        <br>Building Renovation
-                    </label>            
+    <section class="containerr">
+        <div class="contractform">
+            <div class="contractform-container">
+                <br>
+                <br>
+                <h6>Start Your Journey</h6>
+                <br>
+    
+                <input id="companyName" class="form-input" type="text" placeholder="E.g. IBG Reality Pvt Ltd" >
+                <i id="form-icons" class="fa-solid fa-briefcase"></i>
+                <br>
+    
+                <input id="website" class="form-input" type="text" placeholder="E.g. www.ibgreality.com" >
+                <i id="form-icons" class="fa-solid fa-globe"></i>
+                <br>
+    
+                <Select name="select-purpose" id="purpose" class="form-input">
+                    <option value="Regular Business Office">Regular Business Office</option>
+                    <option value="Executive Leadership Spaces">Executive Leadership Spaces</option>
+                    <option value="Sales and Front-end Office">Sales and Front-end Office</option>
+                    <option value="Bank Office /Call Centre /Data Centre">Bank Office /Call Centre /Data Centre</option>
+                    <option value="Co-working Space">Co-working Space</option>
+                    <option value="Others">Others</option>
+                </Select>
+    
+                <input id="phoneNumber" class="form-input"  type="text" placeholder="Phone number" >
+                <i id="form-icons" class="fa-solid fa-phone-flip"></i>
+                <br>
+    
+                <input id="location" class="form-input"  type="text" placeholder="Location">
+                <i id="form-icons" class="fa-solid fa-location-dot"></i>
+                <br>
+    
+                <div class="slider" style="margin-top: 20px;">Office Area 
+                    <span style="margin-left: 170px; font-style: italic; color:#8a8f96;">Carpet (Sq.Ft)</span>
+                    <input id="areaSqft" class="form-input" type="range" min="500" max="50000" value="3000" oninput="rangeValue.innerText = this.value">
+                    <p id="rangeValue">3000</p>
+                </div>   
+    
+                <div id="tiles" class="tiles">
+                        <input id="tile1" class="tile1" type="checkbox" hidden>
+                        <label for="tile1" class="tileLabel1">
+                            <i id="cicon1" class="fa-solid fa-building" style=" font-size:xx-large; margin-top: 10px;"></i>
+                            <br>New Building
+                        </label>
+                        <input id="tile2" class="tile2" type="checkbox" hidden>
+                        <label for="tile2" class="tileLabel2">
+                            <i id="cicon2" class="fa-solid fa-brush" style=" font-size:xx-large; margin-top: 10px;"></i>
+                            <br>Building Renovation
+                        </label>            
+                </div>
+                <br>
+                <button id="submit" class="btn btn-primary" onclick="saveContractForm()">Submit</button>
             </div>
-            <br>
-            <button id="submit" type="submit" class="btn btn-primary" onclick="saveContractForm()">Submit</button>
         </div>
-      </form>
-    </div>
+</section>
 </body>
 </html>
