@@ -1,5 +1,4 @@
-
-
+/******************************** CONSULTATION FORM ********************************/
 function getForms(){
     fetch("http://localhost:8000/ibg-reality/all-forms")
     .then(response => response.json())
@@ -19,7 +18,7 @@ function saveForm() {
     headers.append('Content-Type', 'application/json');
     headers.append('Accept', 'application/json');
 
-    fetch("http://localhost:8000/ibg-reality/save-form", {
+    fetch("http://localhost:8000/ibg-reality/save-contact-form", {
         method: 'POST',
         body: JSON.stringify(consultationForm),
         headers: headers,
@@ -30,6 +29,11 @@ function saveForm() {
 
 }
 
+
+
+
+/******************************** CONTRACT FORM ********************************/
+
 function getContractForms(){
     fetch("http://localhost:8000/ibg-reality/all-contract-forms")
     .then(response => response.json())
@@ -38,19 +42,22 @@ function getContractForms(){
 
 
 function saveContractForm() {
+    var contactValue= document.querySelector('input[name="contract"]:checked').value
+    
     var contractForm = {
         companyName: document.getElementById('companyName').value,
         website: document.getElementById('website').value,
         purpose: document.getElementById('purpose').value,
-        phoneNumber: document.getElementById('phone-number').value,
+        phoneNumber: document.getElementById('phoneNumber').value,
         location: document.getElementById('location').value,
-        areaSqft: document.getElementById('area-sqft').value,
-        contract: document.getElementById('contract').value
+        areaSqft: document.getElementById('areaSqft').value,
+        contract: document.getElementById(contactValue).value
     };
 
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
     headers.append('Accept', 'application/json');
+    console.log(JSON.stringify(contractForm));
 
     fetch("http://localhost:8000/ibg-reality/save-contract-form", {
         method: 'POST',
@@ -60,9 +67,13 @@ function saveContractForm() {
     .then(response => response.json())
     .then(json => console.log(json))
     .catch(error => console.error('Error:', error));
+    console.log(JSON.stringify(contractForm));
 
 }
-   
+
+
+/******************************** COMMENTS FORM ********************************/
+
 
 function getComments(){
     fetch("http://localhost:8000/ibg-reality/all-comments")
