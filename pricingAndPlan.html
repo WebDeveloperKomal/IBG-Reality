@@ -501,8 +501,86 @@
     </script>
 
 <style id="cms_theme_options-dynamic-css" title="dynamic-css" class="redux-options-output">.primary-menu > li > a, body .primary-menu .sub-menu li a{font-display:swap;}body #pagetitle{background-image:url('https://demo.cmssuperheroes.com/themeforest/wp-bildhub/wp-content/uploads/2021/04/bgr-page-title.png');}a{color:#ff5e15;}a:hover{color:#ff5e15;}a:active{color:#ff5e15;}body{font-display:swap;}h1,.h1,.text-heading{font-display:swap;}h2,.h2{font-display:swap;}h3,.h3{font-display:swap;}h4,.h4{font-display:swap;}h5,.h5{font-display:swap;}h6,.h6{font-display:swap;}</style><style id="cms-page-dynamic-css" data-type="redux-output-css">#content{padding-top:0px;padding-bottom:0px;}</style>
+<style>
+    @media only screen and (min-width: 1130px) 
+    {
+        #interior-plan-card-ul{
+           height: 350px;
+        }     
+        #item-image-phi{
+            margin-bottom:190px; margin-right: 60px;
+        }
+    }
+    @media only screen and (min-width:1020px) and (max-width: 1120px) 
+    {
+        #interior-plan-card-price{
+            height: 50px;
+            text-align: center;
+            justify-content: center;
+        }
+        #interior-plan-card-ul{
+            margin-top: 100px;
+            margin-left: 50px;
+            height: 350px;
+            width: 200px;
+        }
+        #interior-plan-card-h3{
+            margin-top: 100px;
+            height: 20px;
+        }
+        #item-image-phi{
+            margin-bottom: 200px;
+            margin-right: 100px;
+        }
+    }
+    @media only screen and (max-width: 1120px) 
+    {
+        #item-image-phi{
+            margin-bottom: 200px;
+            margin-right: 100px;
+        }
+    }
+    @media only screen and (max-width: 500px) 
+    {
+        #interior-plan-card-price{
+            height: 50px;
+            text-align: center;
+            justify-content: center;
+        }
+        #interior-plan-card-ul{
+            margin-top: 100px;
+            margin-left: 50px;
+            height: 350px;
+            width: 200px;
+        }
+        #interior-plan-card-h3{
+            margin-top: 100px;
+            height: 20px;
+        }
+        #item-image-phi{
+            margin-bottom: 100px;
+            margin-right: 20px;
+        }
+        
+    }
 
-   
+</style>
+<style>
+    .phone-float{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 85px;
+        left: 10px;
+    }
+    .whatsapp-float{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 30px;
+        left: 10px;
+    }  
+    </style>
 </head>
 
 <body style="background-color: #cfd7f0;" class="page-template-default page page-id-22 redux-page body-default-font heading-default-font header-sticky elementor-default elementor-kit-7 elementor-page elementor-page-22">
@@ -902,6 +980,8 @@
         <header
             id="masthead"
             class="site-header"
+            style="margin-bottom: 0; background-color: #ffffff;"
+
         >
             <div
                 id="site-header-wrap"
@@ -1025,16 +1105,16 @@
                     <div class="item-socials  col">
                         <div class="entry-social">
                             <div class="title-sidebar"> <span>Quick Connect</span></div> 
-                            <a title="Facebook"  href="#">
+                            <a title="Facebook"  href="https://www.facebook.com/ibgreality/">
                                 <i class="zmdi zmdi-facebook"></i>
                             </a> 
-                            <a title="youtube" href="#">
+                            <a title="youtube" href="https://youtube.com/@IBGReality">
                                 <i class="zmdi zmdi-youtube"></i>
                             </a> 
-                            <a title="Instagram" href="#">
+                            <a title="Instagram" href="https://www.instagram.com/ibgreality/?next=%2F">
                                 <i class="zmdi zmdi-instagram"></i>
                             </a> 
-                            <a title="Linkedin" href="#">
+                            <a title="Linkedin" href="https://www.linkedin.com/in/ibg-reality-882204288/">
                                 <i class="zmdi zmdi-linkedin"></i>
                             </a>
                         </div>
@@ -1084,28 +1164,28 @@
 
                                     <a
                                         title="Facebook"
-                                        href="#"
+                                        href="https://www.facebook.com/ibgreality/"
                                     >
                                         <i class="zmdi zmdi-facebook"></i>
                                     </a>
 
                                     <a
                                         title="Instagram"
-                                        href="#"
+                                        href="https://www.instagram.com/ibgreality/?next=%2F"
                                     >
                                         <i class="zmdi zmdi-instagram"></i>
                                     </a>
 
                                     <a
-                                        title="Vimeo"
-                                        href="#"
+                                        title="Youtube"
+                                        href="https://youtube.com/@IBGReality"
                                     >
                                         <i class="zmdi zmdi-youtube"></i>
                                     </a>
 
                                     <a
                                         title="Linkedin"
-                                        href="#"
+                                        href="https://www.linkedin.com/in/ibg-reality-882204288/"
                                     >
                                         <i class="zmdi zmdi-linkedin"></i>
                                     </a>
@@ -1338,7 +1418,7 @@
                                             class="elementor elementor-22"
                                         >
                                             <section
-                                                style="background-image:url(72aaa484-1ba4-42c9-97ea-6e42fc3107c01.jpg);padding-bottom: 55px;"
+                                                style="background-image:url(72aaa484-1ba4-42c9-97ea-6e42fc3107c0\ \(1\).jpg);padding-bottom: 55px;"
                                                 class="elementor-section elementor-top-section elementor-element elementor-element-f356975 elementor-section-stretched pricing-column elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                                 data-id="f356975"
                                                 data-element_type="section"
@@ -1346,6 +1426,7 @@
                                             >
                                                 <div class="elementor-container elementor-column-gap-default">
                                                     <div
+                                                        id="interior-plan-card"
                                                         class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-60f11d5"
                                                         data-id="60f11d5"
                                                         data-element_type="column"
@@ -1363,13 +1444,13 @@
                                                                         <div class="pricing-meta">
                                                                             <h3 class="pricing-title">Basic</h3>
 
-                                                                            <div class="pricing-price">
+                                                                            <div class="pricing-price" id="interior-plan-card-price">
                                                                                 <span class="icon-dollar">₹</span>
 
                                                                                 <span class="price">1.8K- 2.2K</span>
                                                                             </div>
 
-                                                                            <ul class="cms-pricing-feature">
+                                                                            <ul class="cms-pricing-feature" id="interior-plan-card-ul">
                                                                                 <li>
                                                                                     <h3 class="pricing-consultancy">per Sqft.</h3>  
                                                                                     This plan is designed to accelerate your commercial real estate ventures towards prosperity.                                                                                   
@@ -1379,7 +1460,7 @@
                                                                                     It offers a comprehensive range of tools and services that empower you to make strategic decisions, identify lucrative opportunities, and expand your business horizons with confidence. 
                                                                                 </li>
                                                                             </ul>
-                                                                            <h3 class="pricing-consultancy">Prosperity Blueprint</h3>                                                                                    
+                                                                            <h3 class="pricing-consultancy" id="interior-plan-card-h3">Prosperity Blueprint</h3>                                                                                    
 
                                                                             <br>
 
@@ -1415,13 +1496,13 @@
                                                                         <div class="pricing-meta">
                                                                             <h3 class="pricing-title">Premium</h3>
 
-                                                                            <div class="pricing-price">
+                                                                            <div class="pricing-price" id="interior-plan-card-price" >
                                                                                 <span class="icon-dollar">₹</span>
 
                                                                                 <span class="price">2.2K - 3K</span>
                                                                             </div>
 
-                                                                            <ul class="cms-pricing-feature">
+                                                                            <ul class="cms-pricing-feature" id="interior-plan-card-ul">
                                                                                 <li>
                                                                                     <h3 class="pricing-consultancy">per Sqft.</h3>       
                                                                                     The Elite Commerce Solutions plan is tailored for those seeking the finest commercial realty options.                                                                              
@@ -1431,7 +1512,7 @@
                                                                                     With exclusive access to top-tier properties, expert market insights, and personalized support, this plan elevates your commercial ventures to new heights of success and prominence.
                                                                                 </li>
                                                                             </ul>
-                                                                            <h3 class="pricing-consultancy">Elite Commerce Solutions</h3>                                                                                    
+                                                                            <h3 class="pricing-consultancy" id="interior-plan-card-h3">Elite Commerce Solutions</h3>                                                                                    
 
                                                                             <br>
 
@@ -1467,13 +1548,13 @@
                                                                         <div class="pricing-meta">
                                                                             <h3 class="pricing-title">Luxury</h3>
 
-                                                                            <div class="pricing-price">
+                                                                            <div class="pricing-price" id="interior-plan-card-price">
                                                                                 <span class="icon-dollar">₹</span>
 
                                                                                 <span class="price">3K+</span>
                                                                             </div>
 
-                                                                            <ul class="cms-pricing-feature">
+                                                                            <ul class="cms-pricing-feature" id="interior-plan-card-ul">
                                                                                 <li>
                                                                                     <h3 class="pricing-consultancy">per Sqft.</h3>   
                                                                                     Indulge in the epitome of commercial realty excellence with the Signature Commercial Suite.                                                                                  
@@ -1483,7 +1564,7 @@
                                                                                     This plan caters to your premium needs, providing bespoke solutions, unparalleled property selections, and an array of benefits that epitomize sophistication and success in the world of commercial real estate.
                                                                                 </li>
                                                                             </ul>
-                                                                            <h3 class="pricing-consultancy">Signature Commercial Suite</h3>
+                                                                            <h3 class="pricing-consultancy" id="interior-plan-card-h3">Signature Commercial Suite</h3>
                                                                             <br>
 
                                                                             <div class="button_pricing">
@@ -1548,7 +1629,7 @@
                                                                                                         alt=""
                                                                                                     >
 
-                                                                                                    <div class="item-image" style="margin-bottom:190px; margin-right: 60px;">
+                                                                                                    <div class="item-image" id="item-image-phi">
                                                                                                         <img
                                                                                                             decoding="async"
                                                                                                             width="548"
@@ -1726,7 +1807,7 @@
                         <div class="widget-content">
                             <div class="textwidget">
                                 <p>
-                                    Far far away, behind the word moun tains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                                    IBG Reality is a leading of A-grade commercial, industrial and residential projects in India. Since its foundation the firm has doubled its turnover year on year, with its staff numbers swelling accordingly.
                                 </p>
                             </div>
                         </div>
@@ -1772,7 +1853,7 @@
                                     <a
                                         class="social-facebook"
                                         target="_blank"
-                                        href="#"
+                                        href="https://www.facebook.com/ibgreality/"
                                     >
                                         <i class="zmdi zmdi-facebook"></i>
                                     </a>
@@ -1782,7 +1863,7 @@
                                     <a
                                         class="social-linkedin"
                                         target="_blank"
-                                        href="#"
+                                        href="https://www.linkedin.com/in/ibg-reality-882204288/"
                                     >
                                         <i class="zmdi zmdi-linkedin"></i>
                                     </a>
@@ -1792,7 +1873,7 @@
                                     <a
                                         class="social-instagram"
                                         target="_blank"
-                                        href="#"
+                                        href="https://www.instagram.com/ibgreality/?next=%2F"
                                     >
                                         <i class="zmdi zmdi-instagram"></i>
                                     </a>
@@ -2078,7 +2159,7 @@
                                                 >
                                                     <div class="elementor-widget-container">
                                                         <div class="cms-icon1">
-                                                            <a href="#">
+                                                            <a href="https://www.facebook.com/ibgreality/">
                                                                 <i
                                                                     aria-hidden="true"
                                                                     class="fab fa-facebook-f"
@@ -2090,7 +2171,7 @@
                                                                 ></i>
                                                             </a>
 
-                                                            <a href="#">
+                                                            <a href="https://www.instagram.com/ibgreality/?next=%2F">
                                                                 <i
                                                                     aria-hidden="true"
                                                                     class="material zmdi zmdi-instagram"
@@ -2102,7 +2183,7 @@
                                                                 ></i>
                                                             </a>
 
-                                                            <a href="#">
+                                                            <a href="https://youtube.com/@IBGReality">
                                                                 <i
                                                                     aria-hidden="true"
                                                                     class="fab fa-youtube"
@@ -2114,7 +2195,7 @@
                                                                 ></i>
                                                             </a>
 
-                                                            <a href="#">
+                                                            <a href="https://www.linkedin.com/in/ibg-reality-882204288/">
                                                                 <i
                                                                     aria-hidden="true"
                                                                     class="fab fa-linkedin"
@@ -2366,6 +2447,9 @@
                                                 >
                                                     <div class="elementor-widget-container">
                                                         <div class="elementor-text-editor elementor-clearfix">
+                                                            <p class="pp-tc"><a class="Privacy-Policy" href="privacyPolicy.html">Privacy-Policy</a> | <a class="termsAndConditions" href="termsAndConditions.html">Terms&Conditions</a></p>
+                                                        </div>
+                                                        <div class="elementor-text-editor elementor-clearfix">
                                                             <p>
                                                                 Copyright © 2022
 
@@ -2415,6 +2499,13 @@
             </div>
         </div>
 
+        <a href="tel:91-7391012316" class="phone-float" >
+            <i class="fa-solid fa-phone fa-bounce" style="font-size:large; background-color: orangered; color: white; padding: 15px; border-radius: 3rem;"></i>
+        </a>
+
+        <a href="https://api.whatsapp.com/send?phone=917391012316" class="whatsapp-float">
+            <i class="fa-brands fa-whatsapp fa-bounce" style="font-size:xx-large; background-color: rgb(78, 241, 2); color: white; padding: 7px 9px; border-radius: 3rem;"></i>
+        </a>
         <a
             href="#"
             class="scroll-top"

@@ -42,8 +42,22 @@ function getContractForms(){
 
 
 function saveContractForm() {
-    var contactValue= document.querySelector('input[name="contract"]:checked').value
-    
+    var newBuildingCheckbox = document.getElementById("tile1");  
+    var buildingRenovationCheckbox = document.getElementById("tile2");
+    var contract="";
+            if (newBuildingCheckbox.checked == true && buildingRenovationCheckbox.checked == true)
+            {  
+                alert("Please select only one checkbox");
+              return document.getElementById("error").innerHTML = "Please mark only one checkbox either Yes or No";  
+            }  
+            else if (newBuildingCheckbox.checked == true){  
+              contract = newBuildingCheckbox.value;  
+            }   
+            else if (buildingRenovationCheckbox.checked == true){  
+              contract = buildingRenovationCheckbox.value;  
+            }
+            
+    console.log(JSON.stringify(contract));
     var contractForm = {
         companyName: document.getElementById('companyName').value,
         website: document.getElementById('website').value,
@@ -51,7 +65,7 @@ function saveContractForm() {
         phoneNumber: document.getElementById('phoneNumber').value,
         location: document.getElementById('location').value,
         areaSqft: document.getElementById('areaSqft').value,
-        contract: document.getElementById(contactValue).value
+        contract: contract
     };
 
     let headers = new Headers();
@@ -62,12 +76,13 @@ function saveContractForm() {
     fetch("http://localhost:8000/ibg-reality/save-contract-form", {
         method: 'POST',
         body: JSON.stringify(contractForm),
-        headers: headers,
+        headers: headers, 
     })
     .then(response => response.json())
     .then(json => console.log(json))
     .catch(error => console.error('Error:', error));
     console.log(JSON.stringify(contractForm));
+    alert('Details submitted successfully!')
 
 }
 
